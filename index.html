@@ -1,61 +1,121 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Juan Rogelio Sandoval</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300" rel="stylesheet">
-		<link rel="stylesheet" href="base.css">
-		<link rel="stylesheet" href="estilos-principal.css">
-		<link rel="stylesheet" href="grid.css">
-	</head>
-	<body>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Juan Rogelio Sandoval</title>
+	<!-- aqui ponemos el css de bottstrap -->
+	<link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.min.css">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<!--
 		<nav>
-			<div class="nav-links">
+			<div>
 				<ul>
 					<li><a href="https://github.com/juanrsando">Pagina Oficial</a></li>
 					<li><a href="https://twitter.com/juanrsando">Blog</a></li>
 				</ul>
 			</div>
 		</nav>
-		<main class="tiene-padding">
-			<header>
+	-->
+	<!--  agregue un brand image y un fixed top usando el estilos css para que no se coma -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse">
+
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">JRSG</a>
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+
+	</nav>
+	<main class="container">
+		<header>
+			<div class="jumbotron">
 				<h1>Juan Rogelio Sandoval</h1>
-				<h4>Ingeniero, artísta, músico, programador.</h4>
-			</header>
-			<section class="tiene-clearfix">
-				<article class="col-sm-10 col-md-5 col-lg-7">
-					<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nam accusantium, magni explicabo doloribus nostrum! Enim molestiae, quis, recusandae obcaecati, temporibus aliquid libero, qui ut maxime earum nobis at distinctio!</span><span>Dolores aliquid, doloribus porro minus animi error atque accusantium ad architecto optio ut corporis deleniti dicta vel ratione iure voluptate, fugit ullam hic, illo quia autem quo neque! In, necessitatibus.</span></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur illo earum ea debitis necessitatibus fugit nesciunt optio eum sit, nostrum aspernatur vel quos eaque suscipit accusantium molestiae harum laboriosam? Similique!</p>
-					<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vitae corrupti minima, velit hic eius, ut nam repellat deserunt. Harum totam ipsa similique architecto, ullam magnam corporis qui, tempora numquam.</span><span>Tempore accusamus facere ipsum a deleniti accusantium. In, ratione, ad maxime nam quia delectus culpa ipsum dicta reiciendis, voluptatibus eum saepe eius nesciunt dolor reprehenderit repudiandae? Harum suscipit quos, earum!</span></p>
-				</article>
-				<aside class="col-sm-10 col-md-5 col-lg-3">
-					<h5>Lorem ipsum dolor sit amet</h5>
-					<ul>
-						<li>Lorem ipsum dolor sit amet.</li>
-						<li>Lorem ipsum dolor sit amet.</li>
-						<li>Lorem ipsum dolor sit amet.</li>
-						<li>Lorem ipsum dolor sit amet.</li>
-						<li>Lorem ipsum dolor sit amet.</li>
-						<li>Lorem ipsum dolor sit amet.</li>
-					</ul>
-				</aside>
-			</section>
-			<hr>
-			<!-- <section class="tiene-clearfix">
-				<div class="columna uno-dos">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ex eaque beatae dolorum ratione maiores est incidunt ipsum ea atque iusto repellat eius expedita nulla possimus, harum reprehenderit numquam, laudantium.</p>
-				</div>
-				<div class="columna uno-cuatro">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto libero amet optio, laborum ad modi totam aspernatur veritatis corrupti id in, nemo dolorum similique, consequuntur magnam nihil a dignissimos, deleniti!</p>
-				</div>
-				<div class="columna uno-cuatro">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum commodi veritatis voluptates itaque harum provident esse, voluptatum tenetur, qui nulla amet repellat quod aperiam quis unde corrupti quia ipsam obcaecati.</p>
-				</div>
-			</section> -->
-		</main>
-		<footer>
+				<p class="subheader1">Ingeniero, artísta, músico, programador.</p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+			</div>
+		</header>
+
+		<!--  en ves de section lo cambiamos a row para arreglar problemas de columnas-->
+		<div class="row">
+			<article class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
+				<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nam accusantium, magni explicabo doloribus nostrum! Enim molestiae, quis, recusandae obcaecati, temporibus aliquid libero, qui ut maxime earum nobis at distinctio!</span><span>Dolores aliquid, doloribus porro minus animi error atque accusantium ad architecto optio ut corporis deleniti dicta vel ratione iure voluptate, fugit ullam hic, illo quia autem quo neque! In, necessitatibus.</span></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur illo earum ea debitis necessitatibus fugit nesciunt optio eum sit, nostrum aspernatur vel quos eaque suscipit accusantium molestiae harum laboriosam? Similique!</p>
+				<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vitae corrupti minima, velit hic eius, ut nam repellat deserunt. Harum totam ipsa similique architecto, ullam magnam corporis qui, tempora numquam.</span><span>Tempore accusamus facere ipsum a deleniti accusantium. In, ratione, ad maxime nam quia delectus culpa ipsum dicta reiciendis, voluptatibus eum saepe eius nesciunt dolor reprehenderit repudiandae? Harum suscipit quos, earum!</span></p>
+			</article>
+			<aside class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<h5>Lorem ipsum dolor sit amet</h5>
+				<ul>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+				</ul>
+			</aside>
+		</div>
+		<hr>
+	</main>
+	<footer>
+		<div class="container">
 			<p>Creado por Rogelio Sandoval</p>
-		</footer>
-	</body>
+		</div>
+	</footer>
+	<!-- aqui ponemos el codigo de jquery y el codigo de javascript de bootstrap (que depende del jquery) -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+</body>
+
 </html>

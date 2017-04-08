@@ -1,0 +1,13 @@
+body { padding-top: 70px; }
+.jumbotron{
+  background-image: url('https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg');
+  background-size: cover;
+}
+.subheader1{
+  color: white;
+}
+footer{
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
