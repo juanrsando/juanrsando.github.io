@@ -2,6 +2,7 @@ body { padding-top: 70px; }
 .jumbotron{
   background-image: url('IMG_3759.jpg');
   background-size: cover;
+  background-position: center;
 }
 .subheader1{
   color: white;
